@@ -6,26 +6,38 @@ class RGXML{
         $this->options = $options;
     }
 
+    private function indent($path){
+        $depth = sizeof(explode("/", $path)) - 1;
+        $indent="";
+        $indent = str_pad($indent, $depth, "\t");
+        return "\r\n" . $indent;
+    }
+
     public function serialize($parent_node_name, $data, $path=""){
+        $xml = "";
         if(empty($path)){
             $path = $parent_node_name;
-            $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+            $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
         }
 
         //if this element is marked as hidden, ignore it
-        if($this->options[$path]["is_hidden"])
+        $option = rgar($this->options, $path);
+        if(rgar($option,"is_hidden"))
             return "";
 
-        //if the content is not an array, simply render the node
-        if(!is_array($data))
-            return strlen($data) == 0 && !$this->options[$path]["allow_empty"] ? "" : "<$parent_node_name>" . $this->xml_value($parent_node_name, $data) . "</$parent_node_name>";
+        $padding = $this->indent($path);
 
+        //if the content is not an array, simply render the node
+        if(!is_array($data)){
+            $option = rgar($this->options,$path);
+            return strlen($data) == 0 && !rgar($option, "allow_empty") ? "" : "$padding<$parent_node_name>" . $this->xml_value($parent_node_name, $data) . "</$parent_node_name>";
+        }
         $is_associative = $this->is_assoc($data);
         $is_empty = true;
 
         //opening parent node
-        $version = $path == $parent_node_name ? "version=\"" . GFCommon::$version . "\"" : "";
-        $xml = "<$parent_node_name $version";
+        $version = $path == $parent_node_name && isset($this->options["version"]) ? " version=\"" . $this->options["version"] . "\"" : "";
+        $xml .= "{$padding}<{$parent_node_name}{$version}";
 
         if($is_associative){
             //adding properties marked as attributes for associative arrays
@@ -33,7 +45,8 @@ class RGXML{
                 $child_path = "$path/$key";
                 if($this->is_attribute($child_path)){
                     $value = $this->xml_attribute($obj);
-                    if(strlen($value) > 0 || $this->options[$child_path]["allow_empty"]){
+                    $option = rgar($this->options, $child_path);
+                    if(strlen($value) > 0 || rgar($option, "allow_empty")){
                         $xml .= " $key=\"$value\"";
                         $is_empty = false;
                     }
@@ -43,8 +56,8 @@ class RGXML{
         //closing element start tag
         $xml .= ">";
 
-        //for a regular array, the child element will be the singular vesion of the parent element(i.e. <forms><form>...</form><form>...</form></forms>)
-        $child_node_name = $this->to_singular($parent_node_name);
+        //for a regular array, the child element (if not specified in the options) will be the singular vesion of the parent element(i.e. <forms><form>...</form><form>...</form></forms>)
+        $child_node_name = isset($this->options[$path]["array_tag"]) ? $this->options[$path]["array_tag"] : $this->to_singular($parent_node_name);
 
         //adding other properties as elements
         foreach($data as $key => $obj){
@@ -61,12 +74,14 @@ class RGXML{
         }
 
         //closing parent node
-        $xml .= "</$parent_node_name>";
+        $xml .= "$padding</$parent_node_name>";
 
         return $is_empty ? "" : $xml;
     }
 
     public function unserialize($xml_string){
+        $xml_string = trim($xml_string);
+
         $xml_parser = xml_parser_create();
         $values = array();
         xml_parser_set_option($xml_parser, XML_OPTION_CASE_FOLDING, false);
@@ -87,7 +102,7 @@ class RGXML{
         $obj = array();
 
         //each attribute becomes a property of the object
-        if(is_array($current["attributes"])){
+        if(isset($current["attributes"]) && is_array($current["attributes"])){
             foreach($current["attributes"] as $key => $attribute)
                 $obj[$key] = $attribute;
         }
@@ -104,7 +119,7 @@ class RGXML{
         if(is_array($children)){
             //if all children have the same tag, add them as regular array items (not associative)
             $is_identical_tags = $this->has_identical_tags($children);
-            $unserialize_as_array = $is_identical_tags && $this->options[$children[0]["tag"]]["unserialize_as_array"];
+            $unserialize_as_array = $is_identical_tags && isset($this->options[$children[0]["tag"]]) && $this->options[$children[0]["tag"]]["unserialize_as_array"];
 
             //serialize every child and add it to the object (as a regular array item, or as an associative array entry)
             foreach($children as $child){
@@ -144,7 +159,8 @@ class RGXML{
     }
 
     private function is_attribute($path){
-        return $this->options[$path]["is_attribute"];
+        $option = rgar($this->options, $path);
+        return rgar($option,"is_attribute");
     }
 
     private function xml_value($node_name, $value){
@@ -158,16 +174,10 @@ class RGXML{
     }
 
     private function xml_attribute($value){
-        if ( seems_utf8( $value ) )
-            $value = utf8_encode( $value );
-
         return esc_attr($value);
     }
 
     private function xml_cdata($value){
-        if ( seems_utf8( $value ) )
-            $value = utf8_encode( $value );
-
         return "<![CDATA[$value" . ( ( substr( $value, -1 ) == ']' ) ? ' ' : '') . "]]>";
     }
 
@@ -196,50 +206,13 @@ class RGXML{
         }
     }
 }
+if(!function_exists("rgar")){
+function rgar($array, $name){
+    if(isset($array[$name]))
+        return $array[$name];
 
-
-
-/*
-function startElement($parser, $tagName, $attrs) {
-    global $updated_timestamp, $all_links, $map;
-    global $names, $urls, $targets, $descriptions, $feeds;
-
-    if ($tagName == 'OUTLINE') {
-        foreach (array_keys($map) as $key) {
-            if (isset($attrs[$key])) {
-                $$map[$key] = $attrs[$key];
-            }
-        }
-
-        //echo("got data: link_url = [$link_url], link_name = [$link_name], link_target = [$link_target], link_description = [$link_description]<br />\n");
-
-        // save the data away.
-        $names[] = $link_name;
-        $urls[] = $link_url;
-        $targets[] = $link_target;
-        $feeds[] = $link_rss;
-        $descriptions[] = $link_description;
-    } // end if outline
+    return '';
 }
-
-function endElement($parser, $tagName) {
-    // nothing to do.
 }
-
-// Create an XML parser
-$xml_parser = xml_parser_create();
-
-// Set the functions to handle opening and closing tags
-xml_set_element_handler($xml_parser, "startElement", "endElement");
-
-if (!xml_parse($xml_parser, $opml, true)) {
-    echo(sprintf(__('XML error: %1$s at line %2$s'),
-    xml_error_string(xml_get_error_code($xml_parser)),
-    xml_get_current_line_number($xml_parser)));
-}
-
-// Free up memory used by the XML parser
-xml_parser_free($xml_parser);
-*/
 
 ?>
