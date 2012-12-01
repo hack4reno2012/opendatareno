@@ -15,19 +15,15 @@ if ( !defined( 'ABSPATH' ) ) exit;
 /**
  * Main Activity Class
  *
- * @since 1.5.0
+ * @since BuddyPress (1.5)
  */
 class BP_Activity_Component extends BP_Component {
 
 	/**
 	 * Start the activity component creation process
 	 *
-	 * @since 1.5.0
+	 * @since BuddyPress (1.5)
 	 */
-	function BP_Activity_Component() {
-		$this->__construct();
-	}
-
 	function __construct() {
 		parent::start(
 			'activity',
@@ -39,7 +35,7 @@ class BP_Activity_Component extends BP_Component {
 	/**
 	 * Include files
 	 *
-	 * @since 1.5.0
+	 * @since BuddyPress (1.5)
 	 */
 	function includes() {
 		// Files to include
@@ -51,7 +47,16 @@ class BP_Activity_Component extends BP_Component {
 			'template',
 			'functions',
 			'notifications',
+			'cache'
 		);
+
+		// Load Akismet support if Akismet is configured
+		$akismet_key = bp_get_option( 'wordpress_api_key' );
+		if ( defined( 'AKISMET_VERSION' ) && ( !empty( $akismet_key ) || defined( 'WPCOM_API_KEY' ) ) && apply_filters( 'bp_activity_use_akismet', true ) )
+			$includes[] = 'akismet';
+
+		if ( is_admin() )
+			$includes[] = 'admin';
 
 		parent::includes( $includes );
 	}
@@ -62,7 +67,7 @@ class BP_Activity_Component extends BP_Component {
 	 * The BP_ACTIVITY_SLUG constant is deprecated, and only used here for
 	 * backwards compatibility.
 	 *
-	 * @since 1.5.0
+	 * @since BuddyPress (1.5)
 	 *
 	 * @global object $bp BuddyPress global settings
 	 */
@@ -82,7 +87,6 @@ class BP_Activity_Component extends BP_Component {
 		// All globals for activity component.
 		// Note that global_tables is included in this array.
 		$globals = array(
-			'path'                  => BP_PLUGIN_DIR,
 			'slug'                  => BP_ACTIVITY_SLUG,
 			'root_slug'             => isset( $bp->pages->activity->slug ) ? $bp->pages->activity->slug : BP_ACTIVITY_SLUG,
 			'has_directory'         => true,
@@ -97,7 +101,7 @@ class BP_Activity_Component extends BP_Component {
 	/**
 	 * Setup BuddyBar navigation
 	 *
-	 * @since 1.5.0
+	 * @since BuddyPress (1.5)
 	 *
 	 * @global object $bp BuddyPress global settings
 	 * @uses bp_is_active()
@@ -106,7 +110,8 @@ class BP_Activity_Component extends BP_Component {
 	 * @uses bp_get_groups_slug()
 	 */
 	function setup_nav() {
-		global $bp;
+
+		$sub_nav = array();
 
 		// Add 'Activity' to the main navigation
 		$main_nav = array(
@@ -119,14 +124,14 @@ class BP_Activity_Component extends BP_Component {
 		);
 
 		// Stop if there is no user displayed or logged in
-		if ( !is_user_logged_in() && !isset( $bp->displayed_user->id ) )
+		if ( !is_user_logged_in() && !bp_displayed_user_id() )
 			return;
 
 		// Determine user to use
-		if ( isset( $bp->displayed_user->domain ) )
-			$user_domain = $bp->displayed_user->domain;
-		elseif ( isset( $bp->loggedin_user->domain ) )
-			$user_domain = $bp->loggedin_user->domain;
+		if ( bp_displayed_user_domain() )
+			$user_domain = bp_displayed_user_domain();
+		elseif ( bp_loggedin_user_domain() )
+			$user_domain = bp_loggedin_user_domain();
 		else
 			return;
 
@@ -195,9 +200,9 @@ class BP_Activity_Component extends BP_Component {
 	}
 
 	/**
-	 * Set up the admin bar
+	 * Set up the Toolbar
 	 *
-	 * @since 1.5.0
+	 * @since BuddyPress (1.5)
 	 *
 	 * @global object $bp BuddyPress global settings
 	 * @uses is_user_logged_in()
@@ -218,12 +223,13 @@ class BP_Activity_Component extends BP_Component {
 		if ( is_user_logged_in() ) {
 
 			// Setup the logged in user variables
-			$user_domain   = $bp->loggedin_user->domain;
+			$user_domain   = bp_loggedin_user_domain();
 			$activity_link = trailingslashit( $user_domain . $this->slug );
 
 			// Unread message count
-			if ( $count = bp_get_total_mention_count_for_user( bp_loggedin_user_id() ) ) {
-				$title = sprintf( __( 'Mentions <span class="count">%s</span>', 'buddypress' ), $count );
+			$count = bp_get_total_mention_count_for_user( bp_loggedin_user_id() );
+			if ( !empty( $count ) ) {
+				$title = sprintf( __( 'Mentions <span class="count">%s</span>', 'buddypress' ), number_format_i18n( $count ) );
 			} else {
 				$title = __( 'Mentions', 'buddypress' );
 			}
@@ -239,6 +245,7 @@ class BP_Activity_Component extends BP_Component {
 			// Mentions
 			$wp_admin_nav[] = array(
 				'parent' => 'my-account-' . $this->id,
+				'id'     => 'my-account-' . $this->id . '-mentions',
 				'title'  => $title,
 				'href'   => trailingslashit( $activity_link . 'mentions' )
 			);
@@ -246,6 +253,7 @@ class BP_Activity_Component extends BP_Component {
 			// Personal
 			$wp_admin_nav[] = array(
 				'parent' => 'my-account-' . $this->id,
+				'id'     => 'my-account-' . $this->id . '-personal',
 				'title'  => __( 'Personal', 'buddypress' ),
 				'href'   => trailingslashit( $activity_link )
 			);
@@ -253,6 +261,7 @@ class BP_Activity_Component extends BP_Component {
 			// Favorites
 			$wp_admin_nav[] = array(
 				'parent' => 'my-account-' . $this->id,
+				'id'     => 'my-account-' . $this->id . '-favorites',
 				'title'  => __( 'Favorites', 'buddypress' ),
 				'href'   => trailingslashit( $activity_link . 'favorites' )
 			);
@@ -261,6 +270,7 @@ class BP_Activity_Component extends BP_Component {
 			if ( bp_is_active( 'friends' ) ) {
 				$wp_admin_nav[] = array(
 					'parent' => 'my-account-' . $this->id,
+					'id'     => 'my-account-' . $this->id . '-friends',
 					'title'  => __( 'Friends', 'buddypress' ),
 					'href'   => trailingslashit( $activity_link . bp_get_friends_slug() )
 				);
@@ -270,6 +280,7 @@ class BP_Activity_Component extends BP_Component {
 			if ( bp_is_active( 'groups' ) ) {
 				$wp_admin_nav[] = array(
 					'parent' => 'my-account-' . $this->id,
+					'id'     => 'my-account-' . $this->id . '-groups',
 					'title'  => __( 'Groups', 'buddypress' ),
 					'href'   => trailingslashit( $activity_link . bp_get_groups_slug() )
 				);
@@ -282,7 +293,7 @@ class BP_Activity_Component extends BP_Component {
 	/**
 	 * Sets up the title for pages and <title>
 	 *
-	 * @since 1.5.0
+	 * @since BuddyPress (1.5)
 	 *
 	 * @global object $bp BuddyPress global settings
 	 * @uses bp_is_activity_component()
@@ -298,18 +309,35 @@ class BP_Activity_Component extends BP_Component {
 				$bp->bp_options_title = __( 'My Activity', 'buddypress' );
 			} else {
 				$bp->bp_options_avatar = bp_core_fetch_avatar( array(
-					'item_id' => $bp->displayed_user->id,
-					'type'    => 'thumb'
+					'item_id' => bp_displayed_user_id(),
+					'type'    => 'thumb',
+					'alt'	  => sprintf( __( 'Profile picture of %s', 'buddypress' ), bp_get_displayed_user_fullname() )
 				) );
-				$bp->bp_options_title  = $bp->displayed_user->fullname;
+				$bp->bp_options_title  = bp_get_displayed_user_fullname();
 			}
 		}
 
 		parent::setup_title();
 	}
+
+	/**
+	 * Setup the actions
+	 *
+	 * @since 1.6
+	 */
+	 function setup_actions() {
+		// Spam prevention
+		add_action( 'bp_include', 'bp_activity_setup_akismet' );
+
+		parent::setup_actions();
+	}
 }
 
-// Create the activity component
-$bp->activity = new BP_Activity_Component();
+function bp_setup_activity() {
+	global $bp;
+
+	$bp->activity = new BP_Activity_Component();
+}
+add_action( 'bp_setup_components', 'bp_setup_activity', 6 );
 
 ?>

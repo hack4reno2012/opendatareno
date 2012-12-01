@@ -1,8 +1,9 @@
 <?php
+
 /**
- * BuddyPress Groups Admin Bar
+ * BuddyPress Groups Toolbar
  *
- * Handles the groups functions related to the WordPress Admin Bar
+ * Handles the groups functions related to the WordPress Toolbar
  *
  * @package BuddyPress
  * @subpackage Groups
@@ -15,7 +16,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
  * Adds the Group Admin top-level menu to group pages
  *
  * @package BuddyPress
- * @since 1.5
+ * @since BuddyPress (1.5)
  *
  * @todo Add dynamic menu items for group extensions
  */
@@ -27,26 +28,16 @@ function bp_groups_group_admin_menu() {
 		return false;
 
 	// Only show this menu to group admins and super admins
-	if ( !is_super_admin() && !bp_group_is_admin() )
+	if ( !bp_current_user_can( 'bp_moderate' ) && !bp_group_is_admin() )
 		return false;
 
-	// Group avatar
-	$avatar = bp_core_fetch_avatar( array(
-		'object'     => 'group',
-		'type'       => 'thumb',
-		'avatar_dir' => 'group-avatars',
-		'item_id'    => $bp->groups->current_group->id,
-		'width'      => 16,
-		'height'     => 16
-	) );
-
-	// Unique ID for the 'My Account' menu
-	$bp->group_admin_menu_id = ( ! empty( $avatar ) ) ? 'group-admin-with-avatar' : 'group-admin';
+	// Unique ID for the 'Edit Group' menu
+	$bp->group_admin_menu_id = 'group-admin';
 
 	// Add the top-level Group Admin button
 	$wp_admin_bar->add_menu( array(
 		'id'    => $bp->group_admin_menu_id,
-		'title' => $avatar . bp_get_current_group_name(),
+		'title' => __( 'Edit Group', 'buddypress' ),
 		'href'  => bp_get_group_permalink( $bp->groups->current_group )
 	) );
 
@@ -112,6 +103,18 @@ function bp_groups_group_admin_menu() {
 		'href'   =>  bp_get_groups_action_link( 'admin/delete-group' )
 	) );
 }
-add_action( 'bp_setup_admin_bar', 'bp_groups_group_admin_menu', 99 );
+add_action( 'admin_bar_menu', 'bp_groups_group_admin_menu', 99 );
+
+/**
+ * Remove rogue WP core edit menu when viewing a group
+ *
+ * @since BuddyPress (1.6)
+ */
+function bp_groups_remove_edit_page_menu() {
+	if ( bp_is_group() ) {
+		remove_action( 'admin_bar_menu', 'wp_admin_bar_edit_menu', 80 );
+	}
+}
+add_action( 'bp_init', 'bp_groups_remove_edit_page_menu', 99 );
 
 ?>
