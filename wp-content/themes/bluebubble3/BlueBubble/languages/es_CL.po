@@ -1,0 +1,995 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BlueBubble\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-11 01:57-0400\n"
+"PO-Revision-Date: 2011-01-11 02:01-0400\n"
+"Last-Translator: vrs <vfsrs>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: D:\\Downloads\\xampp-bb\\xampp\\htdocs\\wp-content\\themes\\BlueBubble\\languages\n"
+"X-Poedit-SearchPath-1: D:\\Downloads\\xampp-wp3\\xampp\\htdocs\\wp-content\\themes\\BlueBubble\n"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/404.php:5
+msgid "Oops! 404 Error"
+msgstr "¡Caray! Un error 404."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/404.php:33
+msgid "Sorry! Your page is very lost!"
+msgstr "Lo siento, pero la página que buscas está bien perdida."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/404.php:34
+msgid "You are looking for a page or file which wandered off on its own...they sometimes have a habit of doing that."
+msgstr "Estás buscando a una página que está vagando allá en algún lugar...a veces tienen ese mal hábito."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/404.php:35
+msgid "Here are a few options to find what you are looking for."
+msgstr "Aquí hay unas opciones para encontrar lo que estás buscando."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/404.php:37
+msgid "Cry and scream like a little child."
+msgstr "Llora y grita como un niño."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/404.php:38
+msgid "Double check the web address for typos."
+msgstr "Revisa la dirección que escribiste en tu navegador."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/404.php:39
+msgid "Head back to our home page via the navigation below:"
+msgstr "Vuelva a nuestro sitio usando la navegación que sigue:"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:15
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:84
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:15
+msgid "Archive for the"
+msgstr "Archivo para la"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:15
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:84
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:15
+msgid "Category"
+msgstr "Categoría"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:17
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:86
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:17
+msgid "Posts Tagged"
+msgstr "Entradas etiquetadas"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:19
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:21
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:23
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:88
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:90
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:92
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:19
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:21
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:23
+msgid "Archive for"
+msgstr "Archivo de"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:25
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:94
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:25
+msgid "Author Archive"
+msgstr "Archivo del autor"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:27
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:96
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:27
+msgid "Blog Archives"
+msgstr "Archivo del Blog"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:39
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:107
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:30
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:27
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:42
+msgid "No Comments"
+msgstr "No comentarios"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:39
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:107
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:30
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:27
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:42
+msgid "1 Comment"
+msgstr "1 comentario"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:39
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:107
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:30
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:27
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:42
+msgid "% Comments"
+msgstr "%  comentarios"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:43
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:111
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:34
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:32
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/page.php:23
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:46
+msgid "Read the rest of this entry &raquo;"
+msgstr "Sigue leyendo la entrada &raquo;"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:60
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:128
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:49
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:47
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/page.php:37
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:76
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:80
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:63
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:61
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:129
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:50
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:48
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/page.php:38
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:77
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:81
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:64
+msgid "Sorry, but you are looking for something that is not here."
+msgstr "Lo siento, pero estás buscando algo que no está aquí."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:33
+#, php-format
+msgid "About %s"
+msgstr "Sobre %s"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:35
+msgid "Contact"
+msgstr "Contacta"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:38
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:101
+msgid "Phone"
+msgstr "Fono"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:46
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:80
+msgid "Website"
+msgstr "Sitio Web"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:107
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:30
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:27
+msgid "by"
+msgstr "por"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/author.php:107
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:30
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:27
+msgid "on"
+msgstr "el"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:30
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:27
+msgid "(Updated: "
+msgstr "(Nuevo:"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:43
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:41
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:70
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:74
+msgid "&larr; Older Entries"
+msgstr "&larr; Entradas anteriores"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:44
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/index.php:42
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:71
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:75
+msgid "Newer Entries &rarr;"
+msgstr "Entradas nuevas &rarr;"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Favor de no cargar está página directamente. ¡Gracias!"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Esta publicación es protegida con una contraseá. Entrégala para ver los comentarios."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "No Responses"
+msgstr "No respuestas"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "One Response"
+msgstr "Una respuesta"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "% Responses"
+msgstr "% respuestas"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "to"
+msgstr "a"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:45
+msgid "Comments are closed."
+msgstr "Comentarios están cerrados"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:55
+msgid "Leave a Reply"
+msgstr "Deja una respuesta"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:55
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Deja una respuesta a %s"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:62
+msgid "<p>You must be <a href=\"<?php echo wp_login_url( get_permalink() ); ?>\">logged in</a> to post a comment.</p>"
+msgstr "<p>Debe <a href=\"<?php echo wp_login_url( get_permalink() ); ?>\">iniciar sesión</a> para dejar un comentario.</p>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:69
+msgid "Logged in as"
+msgstr "Sesión iniciada como"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:69
+msgid "Log out &raquo;"
+msgstr "Salir"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:74
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:122
+msgid "Name"
+msgstr "Nombre"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:77
+msgid "Mail (will not be published)"
+msgstr "Email (no será publicado)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:88
+msgid "Submit Comment"
+msgstr "Enviar Comentario"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:17
+msgid "You forgot to enter your name."
+msgstr "Olvidaste escribir tu nombre."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:28
+msgid "You entered an invalid email address."
+msgstr "Tu email no es válido."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:36
+msgid "You forgot to enter your message."
+msgstr "Olvidaste escribir un mensaje."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:96
+msgid "Thanks for sending an email."
+msgstr "Gracias por enviar un email."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:129
+msgid "Email"
+msgstr "Email"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:136
+msgid "Message"
+msgstr "Mensaje"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:142
+msgid "Send a copy of this email to yourself"
+msgstr "Envia una copia de este correo a ti mismo."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:144
+msgid "Send"
+msgstr "Enviar"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:41
+msgid "main"
+msgstr "Menú Principal"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:42
+msgid "footer"
+msgstr "footer"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:43
+msgid "404"
+msgstr "404"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:44
+msgid "Top"
+msgstr "Cima"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:131
+msgid "Image"
+msgstr "Imagen"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:132
+msgid "Using the \"<em>Add an Image</em>\" button, upload an image and paste the URL here."
+msgstr "Usando el botón \"<em>Agregar Imagen</em>\" , carga un imagen y pega la dirección aquí."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:241
+msgid "Choose a category"
+msgstr "Eliga a una categoría"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:249
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:696
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:709
+msgid "General"
+msgstr "General"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:253
+msgid "Color Scheme"
+msgstr "Combinación de colores"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:254
+msgid "Choose a color scheme for the website."
+msgstr "Elige una combinación de colores para el sitio."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:258
+msgid "light gray (default)"
+msgstr "light gray (default)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+msgid "white"
+msgstr "white"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+msgid "lime"
+msgstr "lime"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+msgid "forest"
+msgstr "forest"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+msgid "red"
+msgstr "red"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+msgid "blue"
+msgstr "blue"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+msgid "coffee"
+msgstr "coffee"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:257
+msgid "black"
+msgstr "black"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:260
+msgid "Feedburner URL"
+msgstr "URL Feedburner"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:261
+msgid "Feedburner is a Google service that takes care of your RSS feed. Paste your Feedburner URL here to let readers see it in your website"
+msgstr "Feedburner es un servicio Google que maneja los servicios RSS de tu Blog. Pega aquí la dirección URL de tu Feedburner para compartirlo con tus visitantes."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:266
+msgid "Footer copyright text"
+msgstr "Texto de pie"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:267
+msgid "Enter text used in the left side of the footer. It can be HTML."
+msgstr "Ingresa el texto para el lado izquierdo del pie del sitio. Puede contener HTML."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:272
+msgid "Google Analytics Code"
+msgstr "Código de Analítico Google"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:273
+msgid "You can put your Google Analytics code or code from another tracking service here if you want.  It is automatically added to the footer. Just paste your code, without the &lt;script&gt;&lt;/script&gt; tags."
+msgstr "Puedes colocar el código de Google Analytics o de otro servicio de tracking aquí si quieres. Está automaticamente agregado al pie de tu sitio. Solo pega el código aquí, sin las etiquetas &lt;script&gt;&lt;/script&gt;."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:278
+msgid "Custom CSS"
+msgstr "CSS Personalizado"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:279
+msgid "Place here any custom CSS you might need. (Note: This overrides any other stylesheets)"
+msgstr "Coloca aquí cualquier código personalizado de CSS que necesitas. (Nota: Este código tendrá preferencia sobre otro documentos y elementos de CSS)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:286
+msgid "Horizontal Top Menu"
+msgstr "Menú Superior Horizontal"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:287
+msgid "Check if you want a horizontal menu on the top-right of your website, to the right of the logo."
+msgstr "Marcar si quieres un menú horizontal en el derecho superior del sitio."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:292
+msgid "Legacy Menu Style"
+msgstr "Estilo de Menú Antiguo"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:293
+msgid "Check if you want to <strong>turn on</strong> the old BlueBubble navigation menu style, used before BlueBubble 3.0"
+msgstr "Marcar si quieres <strong>prender</strong> el estilo antiguo de BlueBubble, en uso antes de BlueBubble 3.0"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:298
+msgid "Sidebar Login"
+msgstr "Ingresar Sidebar"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:299
+msgid "Check if you want to <strong>turn on</strong> a login form in the sidebar"
+msgstr "Marcar si quieres <strong>prender</strong> un formulario de ingresar en la columna a la izquierda."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:304
+msgid "Custom Login"
+msgstr "Login Personalizado"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:305
+msgid "Check if you want to <strong>turn on</strong> a custom login screen. (replaces default Wordpress login screen.)"
+msgstr "Marcar si quieres <strong>prender</strong> un formulario de ingresar personalizado."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:310
+msgid "Sidebar On Right"
+msgstr "Columna a la Derecha"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:311
+msgid "Check if you want the sidebar on the <strong>right</strong> side. By default, the sidebar appears on the left."
+msgstr "Marcar si quieres la columna a la <strong>derecha</strong>. Por omisión está a la izquierda."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:316
+msgid "Logo"
+msgstr "Logo"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:317
+msgid "Enter the full path to your logo.<br /><strong>Ideal size is 192 x 77.</strong>"
+msgstr "Ingresa la dirección URL para tu logo. <strong>Tamaño ideal es 192 x 77.</strong>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:322
+msgid "Custom Favicon"
+msgstr "Favicon Personalizado"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:323
+msgid "A favicon is the 16x16 pixel icon that appears in the address bar of most browsers and represents your site; Upload a favicon to Wordpress, then paste the URL to the image that you want to use. (Note: Image should be in .ico format)"
+msgstr "Un favicon es el ícono del tamaño 16x16 que aparece en la barra de dirección en la mayoría de los navegadores y este ícono representa tu sitio. Carga un ícono a Wordpress y luego pegar la dirección URL del ícono aquí. (Nota: ícono debe ser en formata .ico)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:328
+msgid "Portfolio Category"
+msgstr "Categoría de Portafolio"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:329
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:354
+msgid "Enter the name of the Portfolio category. (you must create categories before they will show up in the list.)"
+msgstr "Elige el nombre de la categoría que quieres para el Portafolio. (solo categorías ya creadas aparecerán aquí)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:333
+msgid "Choose a category for your portfolio."
+msgstr "Elige a una categoría para tu portafolio."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:335
+msgid "Portfolio Items Per Page"
+msgstr "Nº de Portafolio Por Página"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:336
+msgid "How many portfolio items do you want to show on each page? (default is 6)"
+msgstr "¿Cuántos artículos quieres mostrar en cada página? (6 por omisión)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:341
+msgid "Comments disable?"
+msgstr "¿Cerrar Comentarios?"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:342
+msgid "Check if you want to disable comments on portfolio items."
+msgstr "Marcar si quieres deshabilitar comentarios en los artículos del portafolio."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:347
+msgid "Turn Off Lightbox?"
+msgstr "¿Apagar Lightbox?"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:348
+msgid "Check if you want to <strong>turn off</strong> the Colorbox popup that appears when clicking an image on your portfolio page. (if turned off, clicking the image will take you to the single portfolio page with the larger image)"
+msgstr "Marcar si quieres <strong>apagar</strong> el Colorbox que aparece cuando alguien apreta una imagen en la página del portafolio. (Apretar el imagen cargará la página del portafolio con el imagen más grande si el Colorbox está apagado)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:353
+msgid "Blog Parent Category"
+msgstr "Categoría de Blog"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:358
+msgid "Choose a category for your blog."
+msgstr "Elige a una categoría para tu Blog."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:360
+msgid "Oldest Posts First?"
+msgstr "¿Antiguos Primeros?"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:361
+msgid "BlueBubble 3.0 normally displays posts from newest to oldest. Check if you want to show oldest posts first. (Note: This will only change blog posts, not portfolio posts order)"
+msgstr "BlueBubble 3.0 normalmente muestra las publicaciones en orden más nuevo => más antiguo. Marcar si quieres cambiar este orden. (Nota: Estesolo cambia el orden de publicaciones del Blog y no se afecta publicaciones del portafolio)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:366
+msgid "Show Date Updated?"
+msgstr "¿Mostrar Fecha Actualizada?"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:367
+msgid "Check this if you would like the <strong>last date updated</strong> to appear on Blog posts."
+msgstr "Marcar si quieres mostrar la <strong>última fecha actualizada</strong> con las entradas de tu Blog."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:372
+msgid "Show Twitter Stream?"
+msgstr "Muestra Twitter Stream?"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:373
+msgid "Check if you want to show Twitter your stream. It will appear in the left sidebar above <strong>Other ways to reach me: </strong> (you must indicate your Twitter username in the next field)"
+msgstr "Marcar si quieres mostrar el stream de Twitter. Aparecerá en la columna a la izquierda sobre <strong>Otras maneras encontrarme: </strong> (Tiene que ingresar tu nombre de usuario en el próximo campo)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:378
+msgid "Twitter Username"
+msgstr "Nombre Usuario Twitter"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:379
+msgid "Enter your Twitter username. In addition to the Twitter stream, your username will be used with the <strong>Tweet Button</strong> located on most pages. (you must check the box in the field above for your Twitter stream to show)"
+msgstr "Ingresa tu nombre de usuario Twitter. Además del stream de Twitter, tu nombre de usuario se usará con el botón <strong>Tweet</strong> ubicado en la mayoría de las páginas. (hay que marcar esta opción el el campo anterior para mostrar el stream de Twitter)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:384
+msgid "Number of Twitter Feeds"
+msgstr "Nº de Entradas Twitter"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:385
+msgid "How many Twitter entries do you want to show? (default is 2; more than 5 is not recommended)"
+msgstr "¿Cuántas entradas el tu stream de Twitter quieres mostrar? (2 por omisión; no se recomienda más que 5)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:390
+msgid "Hide Tweet Buttons?"
+msgstr "¿Esconde Botones Tweet?"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:391
+msgid "Check if you want to hide the Twitter <strong>Tweet</strong> buttons that appear on posts and pages. (The buttons appear by default)"
+msgstr "Marcar si quieres esconder los botones <strong>Tweet</strong> de Twitter que aprecen en publicaciones y páginas. (aparecen por omisión)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:396
+msgid "Contact Form Email Address"
+msgstr "Email Desde Formulario"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:397
+msgid "Where do you want the emails from the contact form to arrive? Place that email address here. (if no email address is entered, email will automatically be sent to the administrator email address)"
+msgstr "¿Dónde quieres que llegan los email enviados desde el formulario de contacto? Coloca está dirección de email aquí. (si no ingresa una dirección el formulario automaticamente enviará los correos a la dirección del administrador del sitio)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:402
+msgid "Show Social Sites Section"
+msgstr "Muestra Enlaces Sociales"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:403
+msgid "Check if you want to show links to sites such as Facebook, Twitter, etc. It will appear in the left sidebar with the header <strong>Other ways to reach me: </strong>"
+msgstr "Marcar si quieres mostrar enlaces a sitios sociales como Facebook, Twitter, etc. Aparecerán en la columna izquierda con el título <strong>Otras maneras encontrarme: </strong>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:409
+msgid "Facebook Social Link"
+msgstr "Enlace Social Facebook"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:410
+msgid "If you would like a link to your Facebook page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Facebook, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:415
+msgid "Twitter Social Link"
+msgstr "Enlace Social Twitter"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:416
+msgid "If you would like a link to your Twitter page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Twitter, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:421
+msgid "LinkedIn Social Link"
+msgstr "Enlace Social LinkedIn"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:422
+msgid "If you would like a link to your LinkedIn page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página LinkedIn, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:427
+msgid "Behance Social Link"
+msgstr "Enlace Social Behance"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:428
+msgid "If you would like a link to your Behance page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Behance, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:433
+msgid "Delicious Social Link"
+msgstr "Enlace Social Delicious"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:434
+msgid "If you would like a link to your Delicious page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Delicious, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:439
+msgid "Digg Social Link"
+msgstr "Enlace Social Digg"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:440
+msgid "If you would like a link to your Digg page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Digg, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:445
+msgid "DeviantArt Social Link"
+msgstr "Enlace Social DeviantArt"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:446
+msgid "If you would like a link to your DeviantArt page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página DeviantArt, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:451
+msgid "MySpace Social Link"
+msgstr "Enlace Social MySpace"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:452
+msgid "If you would like a link to your MySpace page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página MySpace, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:457
+msgid "Evernote Social Link"
+msgstr "Enlace Social Evernote"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:458
+msgid "If you would like a link to your Evernote page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Evernote, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:463
+msgid "Flickr Social Link"
+msgstr "Enlace Social Flickr"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:464
+msgid "If you would like a link to your Flickr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Flickr, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:469
+msgid "Netvibes Social Link"
+msgstr "Enlace Social Netvibes"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:470
+msgid "If you would like a link to your Netvibes page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Netvibes, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:475
+msgid "Orkut Social Link"
+msgstr "Enlace Social Orkut"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:476
+msgid "If you would like a link to your Orkut page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Orkut, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:481
+msgid "Reddit Social Link"
+msgstr "Enlace Social Reddit"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:482
+msgid "If you would like a link to your Reddit page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Reddit, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:487
+msgid "ShareThis Social Link"
+msgstr "Enlace Social ShareThis"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:488
+msgid "If you would like a link to your ShareThis page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página ShareThis, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:493
+msgid "StumbleUpon Social Link"
+msgstr "Enlace Social StumbleUpon"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:494
+msgid "If you would like a link to your StumbleUpon page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página StumbleUpon, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:499
+msgid "Technorati Social Link"
+msgstr "Enlace Social Technorati"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:500
+msgid "If you would like a link to your Technorati page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Technorati, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:505
+msgid "Tumblr Social Link"
+msgstr "Enlace Social Tumblr"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:506
+msgid "If you would like a link to your Tumblr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Tumblr, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:511
+msgid "Search Engine Optimization"
+msgstr "Optimización para Sitios de Búsqueda"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:515
+msgid "Meta Tag: Description"
+msgstr "Meta: Descripción"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:516
+msgid "The meta tag <strong>description</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. Write an overall brief description of your site here."
+msgstr "La etiqueta meta <strong>description</strong> se encuentra en el encabezado de tus páginas y se usa los sitios de búsqueda (i.e. Google) para dar un ranking y una descripción a tu sitio. Escribeuna breve resumen de tu sitio aquí."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:521
+msgid "Meta Tag: Keywords"
+msgstr "Meta: Palabras Claves"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:522
+msgid "The meta tag <strong>keywords</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. List here the keywords that describe your site. <strong>(Example: Blue,Bubble,portfolio,theme)</strong>"
+msgstr "La etiqueta meta <strong>keywords</strong> se encuentra en el encabezado de tus páginas y se usa los sitios de búsqueda (i.e. Google) para dar un ranking y una descripción a tu sitio. Escribe aquí una lista de palabras claves que describen tu sitio.. <strong>(Ejemplo: Blue ,Bubble, portfolio, theme)</strong>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:610
+msgid "Theme Updates"
+msgstr "Actualizaciones"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:621
+msgid "Updates"
+msgstr "Actualizaciones"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:637
+msgid "You have the latest version of the <?php echo $themename; ?> Wordpress theme."
+msgstr "Tienes la versión más recién del theme <?php echo $themename; ?>."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:638
+msgid "You can always check the official websites for the latest updates:</p> <p><a class=\"button\" href=\"http://algo.dosmundoscafe.com/descargar\" target=\"_blank\">imaginalgo</a> or <a class=\"button\" href=\"http://www.flexible7.com/\" target=\"_blank\">Flexible7</a></p> <p>For help and support please visit the BlueBubble demo site:</p> <p><a class=\"button\" href=\"http://bluebubble.dosmundoscafe.com/\" target=\"_blank\">BlueBubble Website</a>"
+msgstr "Siempre puedes revisar los sitios oficiales para las noticias más al día:</p> <p><a class=\"button\" href=\"http://algo.dosmundoscafe.com/descargar\" target=\"_blank\">imaginalgo</a> o <a class=\"button\" href=\"http://www.flexible7.com/\" target=\"_blank\">Flexible7</a></p> <p>Por apoyo y ayuda favor de visitar el sitio de demonstration de BlueBubble:</p> <p><a class=\"button\" href=\"http://bluebubble.dosmundoscafe.com/\" target=\"_blank\">Sitio web BlueBubble</a>."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:657
+msgid " settings saved.</strong></p></div>"
+msgstr " elecciones guardadas.</strong></p></div>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:658
+msgid " settings reset.</strong></p></div>"
+msgstr "Has vuelto las elecciones a sus estado original.</strong></p></div>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:697
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:797
+msgid "Layout"
+msgstr "Configuración"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:698
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:840
+msgid "Logo and Icon"
+msgstr "Logo e Ícono"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:699
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:875
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:700
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:954
+msgid "Blog"
+msgstr "Blog"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:701
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1019
+msgid "Twitter"
+msgstr "Twitter"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:702
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1076
+msgid "Contact Form"
+msgstr "Formulario Contacto"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:703
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1120
+msgid "Social Icons"
+msgstr "Icones Social"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:704
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1191
+msgid "SEO"
+msgstr "SEO"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:705
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1236
+msgid "Info"
+msgstr "Info"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1255
+msgid "<h3>About BlueBubble</h3>"
+msgstr "<h3>Acerca de BlueBubble</h3>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1256
+msgid "<p>BlueBubble is a minimalist and elegant Wordpress portfolio theme originally designed by Thomas Veit, with additions, modifications, and further designs by Mike Walsh beginning with BlueBubble 3.0</p>"
+msgstr "<p>BlueBubble es un theme para Wordpress que es minimalista y elegante. Originalmente diseñado por Thomas Veit, los cambios y actualizaciones desde versión 3.0 se han hecho por Mike Walsh.</p>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1257
+msgid "<p>A full list of credits and thanks can be found at the end of the documents provided with the theme.</p>"
+msgstr "<p>Se puede encontrar una lista de gracias al fin de los documentos de ayuda incluidos con el theme.</p>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1258
+msgid "<p>You can read the latest news about the BlueBubble Wordpress theme at one of the following sites:</p>"
+msgstr "<p>Puedes leer las noticias más recienes en los siguientes sitios:</p>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1263
+msgid "<p><strong>Thank you for choosing BlueBubble!</strong></p>"
+msgstr "<p><strong>¡Gracias por elegir a BlueBubble!</strong></p>"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1275
+msgid "Social Media Icons:"
+msgstr "Icones de Media Social:"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:1281
+msgid "Save Changes"
+msgstr "Guardar"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/page.php:25
+msgid "Back"
+msgstr "Atrás"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:61
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:65
+msgid "Details"
+msgstr "Detalles"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:33
+msgid "Search Results for"
+msgstr "Resultados de búsqueda por"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:33
+msgid ": "
+msgstr ":"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/search.php:33
+msgid "articles"
+msgstr "artículos"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:21
+msgid "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant Wordpress portfolio theme exclusively designed for <strong>you</strong>  <br /> - por <a href=\"http://www.thomasveit.com\" target=\"_blank\">Thomas Veit</a> with love on a Mac."
+msgstr "<strong>Hola.</strong> Soy BlueBubble, un nuevo theme de portafolio para Wordpress en estilo elegante y minimalista diseñado exclusivamente para <strong>ti</strong>  <br /> - por <a href=\"http://www.thomasveit.com\" target=\"_blank\">Thomas Veit</a> con amor y un Mac."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:24
+msgid "<strong>New!</strong> BlueBubble 3.0, compatible with Wordpress 3.0, has been released. <strong>Version 3.0 Updates</strong> <br /> - by <a href=\"http://arte.dosmundoscafe.com\" target=\"_blank\">Mike Walsh</a> with love on a PC."
+msgstr "<strong>¡Nueva!</strong> BlueBubble 3.0, lo que es compatible con Wordpress 3.0, ya ha salido. <strong>Actualizaciones de versión 3.0</strong> <br /> - por <a href=\"http://arte.dosmundoscafe.com\" target=\"_blank\">Mike Walsh</a> con amor y un PC."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:27
+msgid "You can place a widget here to remove the text above."
+msgstr "Puedes colocar un wdget aquí para quitar el texto en esta columna."
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:35
+msgid "Welcome, "
+msgstr "Bienvenidos, "
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:47
+msgid "From Twitter"
+msgstr "Desde Twitter"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:55
+msgid "Other ways to reach me:"
+msgstr "Otras maneras encontrarme:"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:12
+msgid "A monthly archive of your blog&#8217;s posts"
+msgstr "Un archivo mensual de tus entradas de Blog"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:13
+msgid "BB Archives"
+msgstr "Archivo del BB"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:19
+msgid "Archives"
+msgstr "Archivos"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:45
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: D:\Downloads\xampp-wp3\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:72
+msgid "Title:"
+msgstr "Título:"
+
+#~ msgid "<p><strong>Coming Soon:</strong> Arte Con Alas</p>"
+#~ msgstr "<p><strong>Próximamente:</strong> Arte Con Alas</p>"
+
+#, fuzzy
+#~ msgid "Thank you for using <?php echo $themename; ?> Wordpress theme."
+#~ msgstr "Tienes la versión más recién del theme <?php echo $themename; ?>."
+
+#~ msgid "Thank you for using the BlueBubble Wordpress theme."
+#~ msgstr "Gracias por eligir el theme BlueBubble para Wordpress."
+
+#~ msgid " Options"
+#~ msgstr "Opciones"
+
+#~ msgid "Portfolio, Blog and Comments"
+#~ msgstr "Portafolio, Blog y Comentarios"
+
+#~ msgid "Header, Footer and Icons"
+#~ msgstr "Encabezado, Pie e Íconos"
+
+#~ msgid "Contact Form and Social Icons"
+#~ msgstr "Íconos Sociales y Formulario de Contacto"
+
+#~ msgid "To easily use the"
+#~ msgstr "Para fácilmente usar el "
+
+#~ msgid "theme, you can use the menu below."
+#~ msgstr "theme, puedes usar el menu de opciones que sigue."
+
+#~ msgid "Save changes"
+#~ msgstr "Guardar"
+
+#~ msgid "Reset"
+#~ msgstr "Borrar"
+
+#~ msgid "Icons:"
+#~ msgstr "Iconos:"
+
+#~ msgid "Reset All"
+#~ msgstr "Borrar Todo"
+
+#~ msgid "There is a newer version of"
+#~ msgstr "Hay una nueva versión de"
+
+#~ msgid "available. Go to the"
+#~ msgstr "disponible. Vaya a la"
+
+#~ msgid "BlueBubble 3.0 Theme Page"
+#~ msgstr " Página del BlueBubble 3.0 Theme"
+
+#~ msgid ""
+#~ "or the <a href=\"http://www.flexible7.com/\" target=\"_blank\">Flexible "
+#~ "7</a> website"
+#~ msgstr ""
+#~ "o el sitio <a href=\"http://www.flexible7.com/\" target=\"_blank"
+#~ "\">Flexible 7</a> "
+
+#~ msgid "to download the latest version."
+#~ msgstr "para descargar la nueva versión."
+
+#~ msgid "No Comments &rarr;"
+#~ msgstr "Sin comentarios &rarr;"
+
+#~ msgid "1 Comment &rarr;"
+#~ msgstr "1 comentario &rarr;"
+
+#~ msgid "% Comments &rarr;"
+#~ msgstr "% comentarios &rarr;"
+
+#~ msgid "Main Menu"
+#~ msgstr "Menú Principal"
+
+#~ msgid "Footer Menu"
+#~ msgstr "Menú del Pie"
+
+#~ msgid "404 Menu"
+#~ msgstr "Menú del Error 404"
+
+#~ msgid ""
+#~ "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant "
+#~ "wordpress portfolio theme \n"
+#~ "exclusivey designed for <strong>you</strong> <br /> - by <a href=\"http://"
+#~ "www.thomasveit.com\" target=\"_blank\">Thomas Veit</a> with love on a Mac."
+#~ msgstr "poop"
+
+#~ msgid ""
+#~ "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant "
+#~ "Wordpress portfolio theme exclusively designed a"
+#~ msgstr "poop"
+
+#~ msgid ""
+#~ "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant "
+#~ "Wordpress portfolio theme"
+#~ msgstr ""
+#~ "<strong>Hola.</strong> Soy BlueBubble, un nuevo theme de portafolio "
+#~ "Wordpress elegante y minimalista"
+
+#~ msgid "<strong>poop</strong>"
+#~ msgstr "<strong>nigga dump</strong>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<strong>Hi there.</strong> BlueBubble 3.0, compatible with Wordpress 3.0, "
+#~ "has been released. <strong>Version 3.0 Updates</strong> <br /> - by <a "
+#~ "href=\"http://arte.dosmundoscafe.com\" target=\"_blank\">Mike Walsh</a> "
+#~ "with love on a PC."
+#~ msgstr ""
+#~ "<strong>¡Nueva!</strong> BlueBubble 3.0, lo que es compatible con "
+#~ "Wordpress 3.0, ya ha salido. <strong>Actualizaciones de versión 3.0</"
+#~ "strong> <br /> - por <a href=\"http://arte.dosmundoscafe.com\" target="
+#~ "\"_blank\">Mike Walsh</a> con amor y un PC."
+
+#~ msgid ""
+#~ "There is a newer version of <?php echo $theme_name; ?> available. Go to "
+#~ "the <a href=\"http://bluebubble.dosmundoscafe.com/downloads/\" target="
+#~ "\"_blank\">BlueBubble 3.0 Theme Page</a> to download the latest version."
+#~ msgstr ""
+#~ "Hay una nueva versión de <?php echo $theme_name; ?> disponible. Vaya a la "
+#~ "<a href=\"http://bluebubble.dosmundoscafe.com/downloads/\" target=\"_blank"
+#~ "\">Página de BlueBubble 3.0</a> para descargar la versión nueva."

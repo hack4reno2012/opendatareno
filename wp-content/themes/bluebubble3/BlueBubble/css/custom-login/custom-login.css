@@ -1,0 +1,12 @@
+/* CSS Document */
+html {background:#EEEEEE;}	/* Page background. Can't use the body tag for this! */
+h1 a {	/* Title image (The "WordPress Logo"). Remember to update the height and width your image's dimensions */
+background:url(../../images/logo.png) 0 0 no-repeat;
+width:192px;
+height:77px;
+margin:0 0 0 70px;
+} 
+ 
+body.login {border-top-color:#dff4fc;}	/* Top bar background color */
+.login p#backtoblog a:link, .login p#backtoblog a:visited {color:#17272d;}	/* Link effects in top bar */
+.login p#backtoblog a:hover, .login p#backtoblog a:active {color:#17272d;text-decoration:underline;}	/* Rollover link effects in top bar */

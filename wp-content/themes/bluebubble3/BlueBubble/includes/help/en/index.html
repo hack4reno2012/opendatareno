@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>BlueBubble 3.4 Wordpress Theme Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		.titlebar {height:30px; background:#333;margin: 0 0 20px 0; text-align:center;}
+		.lang {display:inline-block;height:25px; width:80px; margin:4px 0 0 0;color:#fff;} 
+		.lang a {color:#fff;} 
+	</style>
+</head>
+
+
+<body>
+	<div class="titlebar"><div class="lang"><strong>English</strong></div><div class="lang"><a href="../es/index.html">Espa&ntilde;ol</a></div></div>
+	<div class="container">
+		<h3 class="center alt">&ldquo;BlueBubble v3.4 Wordpress Theme&rdquo; Documentation by &ldquo;<a href="http://algo.dosmundoscafe.com/en" title="Go to imaginalgo website." target="_blank">imaginalgo</a>&rdquo;</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;BlueBubble v3.4 Wordpress Theme&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: January 11, 2011<br>
+					By: <a href="http://algo.dosmundoscafe.com/en" title="Go to imaginalgo website." target="_blank">imaginalgo</a><br>
+					Support: <a href="http://bluebubble.dosmundoscafe.com/free-theme-bluebubble-v3-0/" target="_blank">BlueBubble Support</a>
+					</strong>
+				</p>
+		  </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for your interest in BlueBubble for Wordpress. This theme  takes advantage of many of the new features included with Wordpress 3.0, such as: MultiSite, Custom Headers and the new Menu System.
+
+All this while keeping the same basic layout from BlueBubble version 2.9.2. Easy to install, easy to deploy – we hope you enjoy this theme.
+</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#new">What's New</a></li>
+			<li><a href="#features">BlueBubble Features</a></li>
+			<li><a href="#install">Installing BlueBubble</a></li>
+			<li><a href="#optionspanel">BlueBubble Options Panel</a></li>
+			<li><a href="#portfolioblog">Setting Up Portfolio and Blog</a></li>
+			<li><a href="#contact">The Contact Form</a></li>
+			<li><a href="#other">Other Options</a></li>
+			<li><a href="#portprojects">Portfolio Projects</a></li>
+			<li><a href="#advanced">Advanced Tips</a></li>
+            <li><a href="#faqs">Help and FAQs</a></li>
+            <li><a href="#credits">Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="new"><strong>A) What's New</strong> - <a href="#toc">top</a></h3>
+		<p>The following is a list of  changes, fixes and additions new in version 3.4:</p>
+		<ul>
+		  <li>Fixed Shortcode Button text color - now appears white on all themes.</li>
+          <li>Fixed stripslash in functions.php, footer.php, header.php....</li>
+<li>Added Shotcodes buttons for all shortcodes.</li>
+<li>Removed small icon versions of content boxes: alert, download, info, and idea.</li>
+<li>Login Sidebar option can be turned on/off from options panel.</li>
+<li>Limited portfolio title to prevent excerpt pushing.</li>
+<li>BlueBubble automatically redirects to Options Panel upon theme activation.</li>
+<li>Now can turn on/off a custom login menu. (replaces default Wordpress login screen)</li>
+<li>Added HTML Documentation in English and Spanish.</li>        
+</ul>
+		<p>As of version 3.3, the BlueBubble theme will automatically notify you of any new updates. Simply go to the BlueBubble Options panel and select the new option Theme Updates from the menu.</p>
+
+		<hr>
+
+		<h3 id="features"><strong>B) BlueBubble Features</strong> - <a href="#toc">top</a></h3>
+
+		<p>Thank you for your interest in BlueBubble for Wordpress. This theme has been renumbered 3.0 to coincide with Wordpress 3.0. It takes advantage of many of the new features included with Wordpress 3.0, such as: MultiSite, Custom Headers and the new Menu System. These are all included "out of the box" meaning that you won't have to mess with adding fields to the functions.php file.</p> 
+
+<p>In addition, there are several new and exciting features included with this version, including: a new Custom Panel with many new options, 7 different color schemes, a Colorbox pop-up for portfolio options, ability to Tweet any post and an author profile box with all the author's posts listed.</p> 
+
+<p>All this while keeping the same basic layout from BlueBubble version 2.9.2. Easy to install, easy to deploy – we hope you enjoy this theme.</p> 
+
+<p>Sincerely,</p> 
+
+<p class="append-bottom alt large"><strong>Thomas Veit and Mike Walsh</strong></p>
+
+		<hr>
+		
+		<h3 id="install"><strong>C) Installing BlueBubble</strong> - <a href="#toc">top</a></h3>
+		
+		<p>First, make sure that you have Wordpress 3.0 or later installed. After installing Wordpress on your server, upload or copy the <strong>bluebubble</strong> folder to the wp-contents/themes directory. Once this is done…</p>
+		
+		<ol>
+			<li>Login to your Wordpress admin page and activate BlueBubble Theme. (in Wordpress 3.0, if you are using the Multi Site function, remember that you have to first "allow" the theme in the Super Admin </li>
+			<li>Create a <strong>page</strong>. Name it home or whatever you like.  This will be your starting page, the one that visitors will see by default. Then, under<strong> Page Attributes</strong>, where it says Template, choose <strong>Portfolio</strong>.</li>
+			<li>Create another <strong>page</strong>. Name it Blog or whatever else you like.  Obviously, this will be for a blog. Then, under <strong>Page Attributes</strong>, where it says Template, choose<strong> Blog</strong>.</li>
+            <li>If you would like to use the BlueBubble contact form, (with Javascript verification and a nice sliding thank-you message when the email is sent) simply create a new page and name it Contact. (or something else) Then, under <strong>Page Attributes</strong>, where it says Template, choose <strong>Contact</strong>.</li>
+            <li>Now, go to the <strong>Settings -> Reading</strong> page and choose the page you created in #2 as the Front page and the page created in #3 as the Posts page.</li>
+            <li>After that, go to <strong>Posts -> Categories</strong> and create two new categories. You might name them Home and Blog, but can be named whatever you like. These will be used to populate the pages you created in #2 and #3 with posts.</li>
+            <li>To create the <strong>Main Navigation</strong>:
+<ul>
+ <li>Go to <strong>Appearance -> Menus</strong>. Where it says Menu Name: Enter Menu Name Here, type a name – whatever you like. Click <strong>Create a Menu</strong>.</li>
+               <li>To make life easier later, check the box next to <strong>Automatically add new top-level pages</strong>.</li>
+               <li>To the left, you should now see Theme Locations: Your theme supports 2 menus. Select which menu appears in each location. In the drop-down menu under Main Navigation Menu, choose <strong>Menu</strong>.</li>
+               <li>Below this you will find a box with the title Pages. Click the boxes next to the pages you want to add to the menu, and then click <strong>Add to Menu</strong>. You can change the order of the pages in the menu by dragging them to where you like.</li>
+            </ul></li>
+            <li>BlueBubble also allows you to create a simple menu in the footer of the site. It is independent of the main navigation menu. To create a footer menu, follow the same steps as in #7, but where it says Menu Name: Enter Menu Name Here, type <strong>Footer</strong>. (or whatever name you like)</li>
+            <li>In addition, BlueBubble features a 404 Error page that can help lost users stay on your website. On the bottom of the 404 Error page, you can display a menu of links that you want your user to follow.  Simply follow the same instructions in #7, but name this menu <strong>404</strong>. (or whatever name you like)</li>
+            <li>Finally, the last option in the menu to the left should be BlueBubble.  Click here to open the <strong>BlueBubble Options Panel</strong>.</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="optionspanel"><strong>D) BlueBubble Options Panel</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The BlueBubble Options Panel has been redesigned in version 3.3. The same options are present, along with several new ones. Here is what you will see:</p>
+		
+<img src="assets/images/optionspanel.jpg" alt="BlueBubble Options Panel" />
+
+<p>A couple of special categories:</p>
+
+			<ul>
+				<li><strong>Color Scheme</strong>: BlueBubble comes with 8 different color schemes which change the themes background color, text, and other items. By default, the theme will display as a light gray, the same as in previous versions of the BlueBubble theme.</li>
+				<li><strong>Twitter</strong>: You can include your latest Twitter posts in your blog.  This is a simple option that will display posts in the left column, below the navigation menu.  You can indicate how many posts you want to be displayed. The default is 2.</li>
+			</ul>
+		
+		
+		<hr>
+		
+		<h3 id="portfolioblog"><strong>E) Setting Up The Portfolio and Blog</strong> - <a href="#toc">top</a></h3>
+		
+<p>This section is pretty simple. Remember when you created your main page and blog page categories in step 2.5? Well, if you did this, then they will appear in the two drop-down menus in this section.  Here you connect the pages you created in steps 2.2 and 2.3 with the categories you created in step 2.5.</p>
+
+<p>The check box is quite simple – if you don't want users to be able to leave comments on your portfolio pages, check the box. (<strong>Note</strong>: Even with the box checked, people can still post to your Blog section)</p>
+
+<p>Beginning with BlueBubble 3.1, you can also turn on and off the lightbox feature for Portfolio items. When turned off, clicking on the image will take you to the detailed portfolio page – the same as clicking Details in the text below the photo.</p>
+
+<p>You can also indicate from the BlueBubble Admin panel how many Portfolio items you would like to appear on each page. If you enter nothing, it will show 6 items per page and automatically create other page(s) if there are more than 6 items.</p>
+
+		<hr>
+
+		<h3 id="contact"><strong>F) The Contact Form</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The BlueBubble contact form comes ready with Javascript validation and the option for the users to send themselves a copy of the email they send to you. Simply type in the email address at which you wish to receive email from the form, and save. If you do not enter an email address, all contact form emails will automatically be sent to the administrator's email account.</p>
+		
+<p>Under the Contact Form Email Address option is a series of spaces related to Social Media. If you would like to enter an icon link, for example, to your Twitter account, follow these two steps:</p>
+
+			<ol>
+				<li>	Check the box that says <strong>Show Social Sites Section</strong>. </li>
+				<li>Now, simply add the complete URL to your account. (<strong>Ex</strong>: if your Twitter username was johndoe, you would enter<strong> http://www.twitter.com/johndoe</strong> in the Twitter field.) The icon will appear at the bottom of the left sidebar. </li>
+			</ol>
+
+<p>Currently supported Social Sites include:<strong> Facebook, Twitter, LinkedIn, Delicious, Digg, DeviantArt, MySpace, Evernote, Flickr, Netvibes, Orkut, Reddit, ShareThis, StumbleUpon, Technorati,</strong> and <strong>Tumblr</strong>. </p>		
+		
+		<hr>
+        
+		<h3 id="other"><strong>G) Other Options</strong> - <a href="#toc">top</a></h3>
+		
+		<p>In addition to the options mentioned earlier, there are some other options that, while not strictly necessary, can help you enjoy more your experience with the BlueBubble theme.</p>
+	
+<p><strong>Custom Logo</strong>: To replace the BlueBubble logo with your own, simply upload an image from the Media option, copy the URL and paste it in the option field.</p>
+<p><strong>Custom Favicon</strong>: Same process as Custom Logo.  Paste the URL in the second option field.  Note: your Favicon should be in .ico format, although some browsers also allow .png</p>
+<p><strong>SEO Fields</strong>: Under Search Engine Optimization you can add a Meta Tag Description, Meta Keywords, or a Google Analytics tracking code. Simply follow the instructions provided under this option in the control panel.</p>
+<p><strong>Custom User Fields</strong>: BlueBubble has added a few fields to the User Profile defaults provided in Wordpress. Enjoy!</p>
+<p><strong>Shortcodes</strong>: There are two types of shortcodes as of BlueBubble 3.2 – text boxes and buttons. Shortcodes are short code brackets that you can add while publishing that add new features. 
+
+As of version 3.4, the shortcodes have been added to the Wordpress Write Panel.  So you can click on the button with a green or blue dot to automatically insert the shortcode for a blue or green button. </p>
+<p><strong>Author Profile Box</strong>: From the blog section, you can click on the name of the author to see a separate page with the author's user profile information as well as a list of all their posts.</p>
+<p><strong>Custom Author Photo</strong>: It is possible to use a Wordpress Plugin to allow users to upload a custom photo, but there is another way. Upload a photo to the wp-content/themes/BlueBubble/images/authors/ folder with the same name as your user ID and in .jpg format. (to see your User ID number, select Users -> Users from the admin page, and hover over the name of the user desired. In the URL that appears in the bottom of your browser you should see user_id=#. That number is the user ID. The administrator has user ID 1.) For example, the administrator would upload 1.jpg. The ideal size is 100x100.</p>		
+		
+		<hr>
+        
+		<h3 id="portprojects"><strong>H) Portfolio Projects</strong> - <a href="#toc">top</a></h3>
+		
+		<p>If you have followed the steps above, adding an item to your portfolio is easy! Follow these steps:</p>
+
+			<ol>
+				<li>Go to <strong>Posts -> Add New</strong>.</li>
+				<li>Type a title and a description for the item.  Then click on <strong>Upload/Insert</strong> icon to Add Media.</li>
+                <li>Select the image you want to use for your portfolio, and upload. The BlueBubble theme automatically crops two sizes – one for the portfolio page thumbnail, and one for the single portfolio item. (larger image)</li>
+                <li>After uploading, you will see options for Title, Caption, Image URL, etc… At the bottom of the page, click the link <strong>Use as featured image</strong>. (it is not necessary to insert the image into the post)</li>
+			</ol>
+
+<p>If you are having trouble setting up a Portfolio or Blog, please read the other Help file which came with this theme.</p>
+
+		<hr>
+        
+		<h3 id="advanced"><strong>I) Advanced Tips</strong> - <a href="#toc">top</a></h3>
+		
+		<p>More advanced users may want to change some specific items. A couple of items to note are:</p>
+
+<ul>		
+<li><strong>Wordpress Version Number</strong>: BlueBubble, for security reasons, does not display the Wordpress version number in the HTML code of the website, to help prevent hacking. This code was added to the functions.php file. If you want the Wordpress version number to show, open functions.php and remove the following:
+<p><pre>/* Remove Wordpress Ver. Number from HTML - For Security Reasons */
+
+function wpbeginner_remove_version() {
+return '';
+}
+add_filter('the_generator', 'wpbeginner_remove_version');
+</pre></p></li>
+
+<li><strong>Contact Form Messages</strong>: When a user fails to fill out a field in the contact form correctly, they receive a default error message. If you would like to change this message, open the contact.php file and look for the following: (change the highlighted fields)
+<p><pre>//Check to make sure that the name field is not empty
+		if(trim($_POST['contactName']) === '') {
+			$nameError = '<span class="highlight">You forgot to enter your name.</span>';
+			$hasError = true;
+		} else {
+			$name = trim($_POST['contactName']);
+		}
+		
+		//Check to make sure sure that a valid email address is submitted
+		if(trim($_POST['email']) === '')  {
+			$emailError = '<span class="highlight">You forgot to enter your email address.</span>';
+			$hasError = true;
+		} else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['email']))) {
+			$emailError = 'You entered an invalid email address.';
+			$hasError = true;
+		} else {
+			$email = trim($_POST['email']);
+		}
+			
+		//Check to make sure comments were entered	
+		if(trim($_POST['comments']) === '') {
+			$commentError = '<span class="highlight">You forgot to enter your message.</span>';
+			$hasError = true;
+		} else {
+			if(function_exists('stripslashes')) {
+				$comments = stripslashes(trim($_POST['comments']));
+			} else {
+				$comments = trim($_POST['comments']);
+			}
+		}
+
+</pre></p>
+<p>Next, go to the scripts folder and open contact-form.js, looking for and changing the following:</p>
+<pre>$('.requiredField').each(function() {
+			if(jQuery.trim($(this).val()) == '') {
+				var labelText = $(this).prev('label').text();
+				$(this).parent().append('<span class="highlight">You forgot to enter your </span>'+labelText+'.');
+				
+				hasError = true;
+			} else if($(this).hasClass('email')) {
+				var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+				if(!emailReg.test(jQuery.trim($(this).val()))) {
+					var labelText = $(this).prev('label').text();
+					$(this).parent().append('<span class="highlight">You entered an invalid </span>'+labelText+'.');
+					<strong>$(this).addClass('inputError');</strong>
+					hasError = true;
+				}
+			}
+		});</pre>
+<p>When the contact form is successfully sent, users will see a default thank-you message. To change this, open the same contact-form.js  file and look for the following at the end of the file: (again, changing the highlighted field)</p>
+<pre>	var formInput = $(this).serialize();
+	$.post($(this).attr('action'),formInput, function(data){
+	$('form#contactForm').slideUp("fast", function() {				   
+	$(this).before('<span class="highlight"><strong>Thanks!</strong> Your email was successfully sent. I will respond to you as soon as possible.</span>');
+	});
+	});
+	}
+		
+return false;
+		
+	});
+});
+</pre>
+</li>
+
+</ul>
+		
+		
+		<hr>
+        
+		<h3 id="faqs"><strong>J) Help and FAQs</strong> - <a href="#toc">top</a></h3>
+
+<p>The following are some frequently asked questions or confusing points. Please please read this document before asking questions on the BlueBubble page!</p>
+
+
+<ul>
+<li><strong>Why doesn't the new author information box appear above my posts?</strong></br>
+In order to have this box appear, you need to fill out the Biographical Info section of your Wordpress user profile.</li>
+
+<li><strong>How do I assign a custom photo with my comments and posts?</strong></br>
+ In order to show a custom image, you need to have uploaded a photo to your gravatar account.
+</li>
+
+<li><strong>What is a gravatar?</strong></br>
+A gravatar is a Global Avatar. In other words, the little image you see next to posts on blogs all over the internet. In order to get one, simply go to <a href="http://www.gravatar.com" target="_blank">http://www.gravatar.com</a>. You will register your email address, and then you can upload a photo.
+</li>
+
+<li><strong>I did this and it still does not work.</strong></br>
+Make sure that the email address you registered with Gravatar is the same that you are using to leave a comment on the BlueBubble theme.
+</li>
+
+<li><strong>I am the author of a post on BlueBubble, but when I leave a message or reply to another user, it does not show my comment in a different color.</strong></br>
+You must be logged in when you leave the comment or reply for your comment to show in the special author color.
+</li>
+
+<li><strong>How do I change BlueBubble to Spanish?</strong></br>
+First, you must have Wordpress installed in Spanish OR have the language files installed. (read about this on the Wordpress.org website) After this is done, go to Settings => General. The last option allows you to select the language of your theme. Choose Spanish.
+</li>
+</ul>
+		<hr>
+
+
+		<h3 id="credits"><strong>K) Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>It was a lot of fun to work with this theme, adding some fun new features to an already wonderful Wordpress theme. But, I couldn't have done it with my own knowledge and artwork, so I would like to thank the following for the necessary inspiration and knowledge:</p>
+
+<ul>
+<li>My wife and her patience.</li>
+<li>My coffee, for being plentiful.</li>
+<li>The music of Silvio Rodríguez, which kept me company many a long night</li>
+<li><a href="http://www.wordpress.org" target="_blank">Wordpress</a>, for their awesome CMS/Blog software, especially now with version 3.0!</li>
+<li><a href="http://www.iconspedia.com/icon/error-1168.html" target="_blank">Iconspedia</a>, for their free Exclamation Mark icon, used on the 404 Error page. Visit website.</li>
+<li><a href="http://www.thomasveit.com" target="_blank">Thomas Veit</a>, for creating the original BlueBubble Wordpress theme. Simple, and elegant. Check it out:</li>
+<li>NetTuts, for an excellent tutorial on creating <a href="http://net.tutsplus.com/tutorials/wordpress/how-to-create-a-better-wordpress-options-panel/" target="_blank">Advanced Wordpress Panels</a>. Check it out:</li>
+<li>NetTuts again, this time for a tutorial on <a href="http://net.tutsplus.com/tutorials/php/404403-website-error-pages-with-php-auto-mailer/" target="_blank">creating a simple 404 Error Page</a>. (This Wordpress theme excludes the auto-mailer): </li>
+<li><a href="http://www.woothemes.com/2009/09/woofunction/" target="_blank">WooThemes</a>, for the cool icons they offer. Their lightbulb icon is used in the Admin Option Panel for BlueBubble. Check out their icons at:</li>
+<li><a href="http://www.malistudio.hr/" target="_blank">Mali Studio</a>, for fixing the error on the Portfolio page which would not show more than one page of items.</li>
+<li><a href="http://www.woothemes.com" target="_blank">WooThemes</a>, for the design inspiration used to redesign the Options Panel.</li>
+</ul>
+		
+		<hr>
+		
+		<p>Again, thank you for downloading and using this theme. Feel free to post s question at the <a href="http://bluebubble.dosmundoscafe.com/free-theme-bluebubble-v3-0/" target="_blank">BlueBubble Support Forum</a> if you have any questions.</p> 
+		
+		<p class="append-bottom alt large"><strong>imaginalgo</strong></p>
+		<p><a href="#toc">Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
