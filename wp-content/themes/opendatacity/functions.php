@@ -4,7 +4,7 @@
 
 function opendatareno_logo() {
     echo '<style type="text/css">
-    h1 a { background-image:url('.get_bloginfo('template_directory').'/images/logo.png) !important; }
+    h1 a { background-image:url('.get_bloginfo('template_directory').'/images/logo.png) !important; background-size: 210px 80px !important; padding-bottom: 30px !important; }
     </style>';
 }
 add_action('login_head', 'opendatareno_logo');
