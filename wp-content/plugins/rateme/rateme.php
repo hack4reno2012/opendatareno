@@ -75,7 +75,7 @@ add_action('untrashed_comment', 'calculate_post_rating');
 
 // Styles & Javascripts
 function wprm_rateme_scripts() {
-	wp_register_script('rateme_js', plugins_url('/assets/rateme.js', __FILE__));
+	wp_register_script('rateme_js', plugins_url('/assets/rateme.js', __FILE__),  array('jquery'), '1.0', true);
 	wp_enqueue_script('rateme_js');
 }
 add_action('wp_enqueue_scripts', 'wprm_rateme_scripts');
