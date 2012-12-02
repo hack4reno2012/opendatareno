@@ -60,7 +60,7 @@ function print_rating($atts) {
 	$the_rating = get_post_meta(get_the_ID(), 'wprm_post_rating', true);
 	
 	if($the_rating != '')
-		echo $the_rating .' / 5;
+		echo $the_rating .' / 5';
 	else
 		echo "not rated";
 }
