@@ -1,7 +1,7 @@
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
-  text-align: center;
+  text-align: left;
 }
 .rating > span {
   display: inline-block;
