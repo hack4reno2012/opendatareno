@@ -1079,6 +1079,7 @@ a.bbutton {color:#fff !important;}
 	font-size: 1.85em; 
 	line-height: 1.2em;
 	font-weight: bold;
+	overflow: hidden;
 }   
 
 .nominationDetail small {
