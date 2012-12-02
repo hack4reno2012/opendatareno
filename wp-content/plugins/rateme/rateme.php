@@ -31,15 +31,19 @@ function calculate_post_rating($comment_id) {
 	$post_comments = get_approved_comments($postID);
 
 	$sum = 0;
+	$count = 0;
 
 	// get the sum for all ratings for all comments
 	foreach($post_comments as $comment) {
 		$comment_rating = get_comment_meta($comment->comment_ID, 'wprm_rating', true);
-		$sum += $comment_rating;
+		
+		if($comment_rating != '')
+		{
+			$comment_rating = intval($comment_rating);
+			$sum += $comment_rating;
+			$count++;
+		}
 	}
-
-	// number of comments
-	$count = sizeof($post_comments);
 
 	// calculate average rating for post
 	$post_rating = $sum / $count;
@@ -50,7 +54,7 @@ function calculate_post_rating($comment_id) {
 
 function print_rating($atts) {
 	extract( shortcode_atts( array('pid' => ''), $atts ) );
-	echo 'Rating: ' . get_post_meta($pid, $key, $single);
+	echo get_post_meta($pid, $key, $single);
 }
 
 add_shortcode('showrating', 'print_rating');
