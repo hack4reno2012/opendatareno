@@ -1122,8 +1122,11 @@ width: 300px;
 	width: 625px;
 }
 
-.datasetsingle .thumb {
+.datasetsingle .thumb  {
 	float: left;
+}
+
+.datasetsingle img {
 	max-width: 32px;
 	max-height: 32px;
 }
