@@ -15,7 +15,7 @@ foreach ($options as $value) {
 
 	<div id="content">
 
- 	  <h2 class = "pagetitle">All Datasets</h2>
+ 	  <h1 class = "pagetitle">All Datasets</h1>
 
 			<?php 
 				$args=array('posts_per_page' => '-1', 'orderby' => 'post_title', 'order' => 'asc' );
