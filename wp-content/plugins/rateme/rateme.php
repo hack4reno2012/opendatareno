@@ -48,6 +48,13 @@ function calculate_post_rating($comment_id) {
 	update_post_meta($postID, 'wprm_post_rating', $post_rating);
 }
 
+function print_rating($atts) {
+	extract( shortcode_atts( array('pid' => ''), $atts ) );
+	echo 'Rating: ' . get_post_meta($pid, $key, $single);
+}
+
+add_shortcode('showrating', 'print_rating');
+
 // Comment has been added, save the individual rating and calculate post rating
 add_action('comment_post', 'add_rating');
 

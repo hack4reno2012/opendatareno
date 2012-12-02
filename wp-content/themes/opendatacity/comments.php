@@ -21,7 +21,7 @@
 
 <div id="respond">
 
-<h2><?php comment_form_title( 'Ratings/Comments'); ?> <span class = "avgRating">Average Rating: <?php //the_rating(); ?></span></h2>
+<h2><?php comment_form_title( 'Ratings/Comments'); ?> <span class = "avgRating">Average Rating: <?php echo do_shortcode('[showrating pid=]'.$post->id.']'); ?></span></h2>
 
 <div class="cancel-comment-reply">
 	<small><?php cancel_comment_reply_link(); ?></small>
