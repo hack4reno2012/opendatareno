@@ -1,13 +1,5 @@
 <?php get_header(); ?>
 
-<?php
-//allows the theme to get info from the theme options page
-global $options;
-foreach ($options as $value) {
-    if (get_settings( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
-}
-?>
-
 	<div id="content">
 
 	<?php if (have_posts()) : ?>
@@ -16,18 +8,15 @@ foreach ($options as $value) {
 
 			<div class="post" id="post-<?php the_ID(); ?>">
 							
-				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a><?php if (get_option('bb_no_tweet') == '') { ?><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a>
-<?php } // Check for Tweet Button Off ?></h1>  
+				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>  
 
-				<div id = "excerpt"><?php the_excerpt(); ?></div>
-				    
 				<div id = "data_wrapper"> 
 			    
 					<div id = "data_info">
 						<div id = "data_image">
 							<?php the_post_thumbnail('thumbnail'); ?> 
 						</div>
-				   		<h2>Information</h2>
+						<h2>Information</h2>
 						<p><strong>Organization </strong><br /><?php get_custom_field('organization', TRUE); ?></p>
 						<p><strong>Categories </strong><br />
 						<?php    
@@ -53,7 +42,7 @@ foreach ($options as $value) {
 						  }
 						?>
 						</p>
-						<p><strong>Description</strong><br /><?php echo get_the_content(); ?></p> 
+						<p><strong>Description</strong><br /><?php the_content(); ?></p> 
 						<p><strong>Update Frequency </strong><br /><?php get_custom_field('update_frequency', TRUE); ?></p>
 						<p><strong>Valid Time Period </strong><br /><?php get_custom_field('timeperiod', TRUE); ?></p>
 						<p><strong>Release Date </strong><br /><?php get_custom_field('release_date', TRUE); ?></p> 
@@ -61,7 +50,7 @@ foreach ($options as $value) {
 					</div>
 				
 					<div id = "data_detail">
-					    <h2>Data</h2>
+						<h2>Data</h2>
 						<p><a href = "<?php get_custom_field('website_url', TRUE); ?>" target = "_blank"><?php the_title(); ?></a></p>
 
 					</div>   

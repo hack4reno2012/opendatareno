@@ -1,5 +1,44 @@
 <?php
 
+function odr_register_post_types() {
+	// nominations post type
+
+	$labels = array(
+		'name' => 'Nominations',
+		'singular_name' => 'Nomination', 
+		'add_new' => 'Add New',
+		'add_new_item' => 'Add New Nomination',
+		'edit_item' => 'Edit Nomination',
+		'new_item' => 'New Nomination',
+		'all_items' => 'All Nominations', 
+		'view_item' => 'View Nominations', 
+		'search_items' => 'Search Nominations', 
+		'not_found' => 'No nominations found', 
+		'not_found_in_trash' => 'No nominations found in Trash',
+		'parent_item_colon' => '',
+		'menu_name' => 'Nominations',
+	);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true, 
+		'show_in_menu' => true, 
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'nomination' ),
+		'capability_type' => 'post',
+		'has_archive' => true, 
+		'hierarchical' => false,
+		'menu_position' => null,
+		'supports' => array( 'title', 'editor', 'author', 'comments' )
+	); 
+	register_post_type( 'nomination', $args );
+}
+add_action( 'init', 'odr_register_post_types' );
+
+/*
+* Stuff below is from the blue bubble theme and should be ruthlessly decommissioned!
+*/
 
 // Make theme available for translation
 // Translations can be filed in the /languages/ directory
