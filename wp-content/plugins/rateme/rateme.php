@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: Rate Me
-Plugin URI: https://github.com/colinloretz/rateme
+Plugin URI: n/a
 Description: Post rating plugin built for Open Data Catalog
 Author: Colin Loretz
 Version: 0.1
