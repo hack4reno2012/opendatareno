@@ -54,8 +54,12 @@ function calculate_post_rating($comment_id) {
 }
 
 function print_rating($atts) {
-	extract( shortcode_atts( array('pid' => ''), $atts ) );
-	echo get_post_meta(63, 'wprm_post_rating', true);
+	$the_rating = get_post_meta(get_the_ID(), 'wprm_post_rating', true);
+	
+	if($the_rating == '')
+		echo $the_rating;
+	else
+		echo "not rated";
 }
 
 add_shortcode('showrating', 'print_rating');
@@ -64,6 +68,9 @@ add_shortcode('showrating', 'print_rating');
 add_action('comment_post', 'add_rating');
 
 // Comment has been deleted, recalculate the overall post rating
+add_action('transition_comment_status', 'calculate_post_rating');
 add_action('deleted_comment', 'calculate_post_rating');
+add_action('trashed_comment', 'calculate_post_rating');
+add_action('untrashed_comment', 'calculate_post_rating');
 
 ?>
