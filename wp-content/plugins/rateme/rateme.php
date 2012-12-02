@@ -46,7 +46,8 @@ function calculate_post_rating($comment_id) {
 	}
 
 	// calculate average rating for post
-	$post_rating = $sum / $count;
+	if($count != 0)
+		$post_rating = $sum / $count;
 
 	// update post meta with new post rating
 	update_post_meta($postID, 'wprm_post_rating', $post_rating);
@@ -54,7 +55,7 @@ function calculate_post_rating($comment_id) {
 
 function print_rating($atts) {
 	extract( shortcode_atts( array('pid' => ''), $atts ) );
-	echo get_post_meta($pid, $key, $single);
+	echo get_post_meta($pid, 'wprm_post_rating', $single);
 }
 
 add_shortcode('showrating', 'print_rating');
