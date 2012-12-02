@@ -22,8 +22,6 @@ foreach ($options as $value) {
 				$allposts = new WP_Query($args); ?>
 			<?php if ( $allposts->have_posts() ) : ?>
 				<?php while( $allposts->have_posts() ) : $allposts->the_post(); ?>
-					<li><a href="<?php the_permalink(); ?>" title=""><?php the_title(); ?></a></li>
-
 					<div class="datasetsingle" id="post-<?php the_ID(); ?>"> 
 			        
 						<div class = "thumb">
