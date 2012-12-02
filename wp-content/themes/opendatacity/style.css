@@ -1113,3 +1113,11 @@ width: 300px;
 .avgRating { float: right; }
 
 #columns { width: 615px; }
+
+.datasetsingle {
+	background: #DDE3E9;
+	border: 1px solid #C3CFDC;
+	padding: 10px;
+	margin: 10px 0 5px 0px;
+	width: 625px;
+}
