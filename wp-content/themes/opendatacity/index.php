@@ -69,8 +69,15 @@ new TWTR.Widget({
 				
 				<div>
 					<h2>Recent Additions</h2>
-				
-				   Coming Soon...
+					<?php $recent = new WP_Query( 'cat=-23' ); ?>
+					<?php if ( $recent->have_posts() ) : ?>
+					<ul>
+						<?php while( $recent->have_posts() ) : $recent->the_post(); ?>
+							<li><a href="<?php the_permalink(); ?>" title=""><?php the_title(); ?></a></li>
+						<?php endwhile; ?>
+						<?php wp_reset_postdata(); ?>
+					</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div style = "clear: both"></div>
