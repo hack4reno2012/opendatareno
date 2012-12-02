@@ -12,7 +12,7 @@ Version: 0.1
 Author URI: https://github.com/colinloretz
 */
 
-function add_rating($comment_id)) {
+function add_rating($comment_id) {
 
 	// add rating to the comment
 	add_comment_meta($comment_id, 'wprm_rating', $_POST['wprm_rating'], true);
