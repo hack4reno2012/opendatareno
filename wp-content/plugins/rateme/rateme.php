@@ -73,4 +73,74 @@ add_action('deleted_comment', 'calculate_post_rating');
 add_action('trashed_comment', 'calculate_post_rating');
 add_action('untrashed_comment', 'calculate_post_rating');
 
+
+function rateme_css() {
+
+	echo '
+	<style type="text/css">
+	.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+}
+.rating:hover {
+	cursor: pointer;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}
+
+.selected:before {
+	content: "\2605";
+	position: absolute;
+	left: 0; 
+	color: gold;
+}
+	</style>
+	';
+}
+
+add_action( 'wp_head', 'rateme_css' );
+
+function rateme_js() {
+
+	echo '
+	<script>
+$(document).ready(function() {
+	
+	$(".rating span").click(function(){
+		$(this).removeClass("selected");
+		$(this).siblings().removeClass("selected");
+		
+		var num = $(this).attr("class");
+		if(num == "one") num = 1;
+		if(num == "two") num = 2;
+		if(num == "three") num = 3;
+		if(num == "four") num = 4;
+		if(num == "five") num = 5;
+		$("input[name=wprm_rating]"").val(num);
+		
+		$(this).addClass("selected");
+		$(this).nextAll("span").addClass("selected");
+	});
+
+});
+</script>
+	';
+}
+
+add_action( 'wp_head', 'rateme_js' );
 ?>

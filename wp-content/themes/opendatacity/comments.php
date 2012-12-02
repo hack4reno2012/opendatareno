@@ -37,8 +37,14 @@
                                                                                                    
 <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
 
-<p><div style = "float: left; width: 150px;">Rate this data <input type="radio" name="wprm_rating" value="1"> one <input type="radio" name="wprm_rating" value="2"> two <input type="radio" name="wprm_rating" value="3"> three <input type="radio" name="wprm_rating" value="4"> four <input type="radio" name="wprm_rating" value="5"> five
-</div>
+<p>
+	<div style = "float: left; width: 150px;">
+	Rate this data 
+	<div class="rating">
+		<span class = "five">☆</span><span class = "four">☆</span><span class = "three">☆</span><span class = "two">☆</span><span class = "one">☆</span>
+	</div>
+	<input type = "hidden" name = "wprm_rating" />
+	</div>
 <input name="submit" type="submit" id="submit" tabindex="5" value="Submit" style = "float: left; margin-top: 10px; padding: 10px;"/><div style = "clear: both"></div>
 <?php comment_id_fields(); ?>
 </p>
