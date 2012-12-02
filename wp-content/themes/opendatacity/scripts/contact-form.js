@@ -13,7 +13,7 @@ $(document).ready(function() {
 				if(!emailReg.test(jQuery.trim($(this).val()))) {
 					var labelText = $(this).prev('label').text();
 					$(this).parent().append('<p class="error">You entered an invalid '+labelText+'.</p>');
-					<strong>$(this).addClass('inputError');</strong>
+					$(this).addClass('inputError');
 					hasError = true;
 				}
 			}
