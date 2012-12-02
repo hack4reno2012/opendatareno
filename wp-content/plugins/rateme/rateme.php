@@ -73,74 +73,17 @@ add_action('deleted_comment', 'calculate_post_rating');
 add_action('trashed_comment', 'calculate_post_rating');
 add_action('untrashed_comment', 'calculate_post_rating');
 
-
-function rateme_css() {
-
-	echo '
-	<style type="text/css">
-	.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  text-align: center;
+// Styles & Javascripts
+function wprm_rateme_scripts() {
+	wp_register_script('rateme_js', plugins_url('/assets/rateme.js', __FILE__));
+	wp_enqueue_script('rateme_js');
 }
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-.rating > span:hover,
-.rating > span:hover ~ span {
-  color: transparent;
-}
-.rating:hover {
-	cursor: pointer;
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-   left: 0; 
-   color: gold;
-}
+add_action('wp_enqueue_scripts', 'wprm_rateme_scripts');
 
-.selected:before {
-	content: "\2605";
-	position: absolute;
-	left: 0; 
-	color: gold;
+function wprm_rateme_styles() {
+	wp_register_style('rateme_css', plugins_url('/assets/rateme.css', __FILE__));
+	wp_enqueue_style('rateme_css');
 }
-	</style>
-	';
-}
+add_action('wp_enqueue_styles', 'wprm_rateme_styles');
 
-add_action( 'wp_head', 'rateme_css' );
-
-function rateme_js() {
-
-	echo '
-	<script>
-$(document).ready(function() {
-	
-	$(".rating span").click(function(){
-		$(this).removeClass("selected");
-		$(this).siblings().removeClass("selected");
-		
-		var num = $(this).attr("class");
-		if(num == "one") num = 1;
-		if(num == "two") num = 2;
-		if(num == "three") num = 3;
-		if(num == "four") num = 4;
-		if(num == "five") num = 5;
-		$("input[name=wprm_rating]"").val(num);
-		
-		$(this).addClass("selected");
-		$(this).nextAll("span").addClass("selected");
-	});
-
-});
-</script>
-	';
-}
-
-add_action( 'wp_head', 'rateme_js' );
 ?>
