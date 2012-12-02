@@ -84,6 +84,6 @@ function wprm_rateme_styles() {
 	wp_register_style('rateme_css', plugins_url('/assets/rateme.css', __FILE__));
 	wp_enqueue_style('rateme_css');
 }
-add_action('wp_enqueue_styles', 'wprm_rateme_styles');
+add_action('wp_enqueue_scripts', 'wprm_rateme_styles');
 
 ?>
