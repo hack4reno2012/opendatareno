@@ -54,8 +54,7 @@ function calculate_post_rating($comment_id) {
 }
 
 function print_rating($atts) {
-	extract( shortcode_atts( array('pid' => ''), $atts ) );
-	echo get_post_meta($pid, 'wprm_post_rating', true);
+	echo get_post_meta(get_the_ID(), 'wprm_post_rating', true);
 }
 
 add_shortcode('showrating', 'print_rating');
