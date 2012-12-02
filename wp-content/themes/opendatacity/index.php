@@ -8,7 +8,7 @@
 
  		<div id = "mainsearch">
 			<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-				<div><input type="text" size="18" value="<?php echo wp_specialchars($s, 1); ?> Search for data" name="s" id="s" />
+				<div><input type="text" size="18" name="s" id="s" placeholder = "Search for data" />
 				<input type="submit" id="searchsubmit" value="Search" class="btn" />
 				</div>
 			</form>
