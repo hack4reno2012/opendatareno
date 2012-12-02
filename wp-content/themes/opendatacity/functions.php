@@ -1,6 +1,11 @@
 <?php
 
-function odr_register_post_types() {
+function odc_linkify_urls( $content ) {
+	$content = preg_replace( "#(https?|ftp)://[^\s<]+[^\s.,><)\];'\"!?]#", '<a href="\\0">\\0</a>', $content );
+	return $content;
+}
+
+function odc_register_post_types() {
 	// nominations post type
 
 	$labels = array(
@@ -34,7 +39,7 @@ function odr_register_post_types() {
 	); 
 	register_post_type( 'nomination', $args );
 }
-add_action( 'init', 'odr_register_post_types' );
+add_action( 'init', 'odc_register_post_types' );
 
 /*
 * Stuff below is from the blue bubble theme and should be ruthlessly decommissioned!

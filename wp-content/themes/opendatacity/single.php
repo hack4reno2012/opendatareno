@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php add_filter( 'the_content', 'odc_linkify_urls' ); ?>
 
 	<div id="content">
 
