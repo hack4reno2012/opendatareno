@@ -56,7 +56,7 @@ function calculate_post_rating($comment_id) {
 function print_rating($atts) {
 	$the_rating = get_post_meta(get_the_ID(), 'wprm_post_rating', true);
 	
-	if($the_rating == '')
+	if($the_rating != '')
 		echo $the_rating;
 	else
 		echo "not rated";
