@@ -638,11 +638,6 @@ if (function_exists('curl_init')) {
 	if($theme_update['current_version'] < $theme_update['new_version'])
 		$opts = "<span class='update-plugins count-1'><span class='update-count'>1</span></span>";
 
-
-    add_menu_page('BlueBubble Options', $themename, 'administrator',basename(__FILE__),'mytheme_admin', get_bloginfo('template_url'). '/includes/images/bb-admin-icon.png', 26);
-    add_submenu_page(basename(__FILE__), "Theme Updates",  __("Theme Updates") . $opts,'administrator','bb_theme_updates', 'bb_theme_updates', 26);
-// this handles redirect on activating the theme (can be amended for plugin of course)
-if ($_GET['activated']){ wp_redirect(admin_url("admin.php?page=functions.php")); } 
 }
 
 
