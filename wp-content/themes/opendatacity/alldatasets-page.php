@@ -18,7 +18,7 @@ foreach ($options as $value) {
  	  <h1 class = "pagetitle">All Datasets</h1>
 
 			<?php 
-				$args=array('posts_per_page' => '-1', 'orderby' => 'post_title', 'order' => 'asc' );
+				$args=array('posts_per_page' => '-1', 'orderby' => 'title', 'order' => 'asc' );
 				$allposts = new WP_Query($args); ?>
 			<?php if ( $allposts->have_posts() ) : ?>
 				<?php while( $allposts->have_posts() ) : $allposts->the_post(); ?>
