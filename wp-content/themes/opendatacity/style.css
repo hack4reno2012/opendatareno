@@ -1121,3 +1121,14 @@ width: 300px;
 	margin: 10px 0 5px 0px;
 	width: 625px;
 }
+
+.datasetsingle .thumb {
+	float: left;
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.datasetsingle h2 {
+	float: left;
+	margin-left: 20px;
+}
