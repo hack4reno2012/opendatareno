@@ -1,9 +1,34 @@
 <?php
 
+// Start login page overrides
+
+function opendatareno_logo() {
+    echo '<style type="text/css">
+    h1 a { background-image:url('.get_bloginfo('template_directory').'/images/logo.png) !important; }
+    </style>';
+}
+add_action('login_head', 'opendatareno_logo');
+
+// changing the login page URL
+function opendatareno_url(){
+	return ('http://www.opendatareno.org/'); 
+}
+add_filter('login_headerurl', 'opendatareno_url');
+
+// changing the login page URL hover text
+function opendatareno_title(){
+	return ('Open Data Reno'); 
+}
+add_filter('login_headertitle', 'opendatareno_title');
+
+// End login page overrides
+
 function odc_linkify_urls( $content ) {
 	$content = preg_replace( "#(https?|ftp)://[^\s<]+[^\s.,><)\];'\"!?]#", '<a href="\\0">\\0</a>', $content );
 	return $content;
 }
+
+// End login page overrides
 
 function odc_register_post_types() {
 	// nominations post type
