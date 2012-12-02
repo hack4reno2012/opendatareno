@@ -47,7 +47,10 @@ function calculate_post_rating($comment_id) {
 
 	// calculate average rating for post
 	if($count != 0)
+	{
 		$post_rating = $sum / $count;
+		$post_rating = round($post_rating);
+	}
 
 	// update post meta with new post rating
 	update_post_meta($postID, 'wprm_post_rating', $post_rating);
@@ -57,7 +60,7 @@ function print_rating($atts) {
 	$the_rating = get_post_meta(get_the_ID(), 'wprm_post_rating', true);
 	
 	if($the_rating != '')
-		echo $the_rating;
+		echo $the_rating .' / 5;
 	else
 		echo "not rated";
 }
