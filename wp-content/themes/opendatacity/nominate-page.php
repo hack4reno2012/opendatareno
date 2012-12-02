@@ -6,15 +6,7 @@ Template Name: Nomination Page
 
 <?php get_header(); ?>
 
-<?php
-//allows the theme to get info from the theme options page
-global $options;
-foreach ($options as $value) {
-    if (get_settings( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
-}
-?>
-
-	<div id="content">
+<div id="content">
 
 	<?php if (have_posts()) : ?>
 
@@ -22,13 +14,12 @@ foreach ($options as $value) {
 
 			<div class="post" id="post-<?php the_ID(); ?>">
 			
-				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a><?php if (get_option('bb_no_tweet') == '') { ?><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a>
-<?php } // Check for Tweet Button Off ?></h1>  
+				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 
 				<div class = "entry">
-				<p>Do you want to see data on particular topic? We realize that OpenDataReno does not contain links to every available data resource - often because open data might not be available. Add a nomination for a type of data and vote on other nominations. Together, let's build a list of areas where we'd like to see increased availability of open data.</p> 
+					<p>Do you want to see data on particular topic? We realize that OpenDataReno does not contain links to every available data resource - often because open data might not be available. Add a nomination for a type of data and vote on other nominations. Together, let's build a list of areas where we'd like to see increased availability of open data.</p> 
 
-<p>This page is for suggesting general areas where you'd like to see more open data. If you have a specific data set to add, visit the <a href = "/submit-your-data">Submit Data</a> page.</p>
+					<p>This page is for suggesting general areas where you'd like to see more open data. If you have a specific data set to add, visit the <a href = "/submit-your-data">Submit Data</a> page.</p>
 				</div>
 				
 				<div class="entry">
@@ -53,16 +44,11 @@ foreach ($options as $value) {
 	                
 			<div class="postsingle">  
 			
-						<?php
-    					$recentPosts = new WP_Query();
-						$recentPosts->query('category_name=nominations'); 
-						  
+					<?php
 						global $wpdb;
 						global $post;          
 					   $query = "SELECT wposts.* FROM $wpdb->posts wposts
-							LEFT JOIN $wpdb->term_relationships ON (wposts.ID = $wpdb->term_relationships.object_id)
-							LEFT JOIN $wpdb->term_taxonomy ON ($wpdb->term_relationships.term_taxonomy_id = $wpdb->term_taxonomy.term_taxonomy_id)
-						WHERE $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.term_id IN(23)";
+						WHERE wposts.post_type = 'nomination' AND wposts.post_status = 'publish'";
 
 						$pageposts = ShowPostByVotes($query);
 						

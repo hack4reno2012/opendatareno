@@ -1,14 +1,6 @@
 <?php get_header(); ?>
 
-<?php
-//allows the theme to get info from the theme options page
-global $options;
-foreach ($options as $value) {
-    if (get_settings( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
-}
-?>
-
-	<div id="content">
+<div id="content">
 	            	
 	<div id = "hero" > 
 	Access to open data allows for transparency, utility and innovation. Submit and use data on OpenDataReno to help make Reno a smarter, more engaged city.
@@ -69,7 +61,7 @@ new TWTR.Widget({
 				
 				<div>
 					<h2>Recent Additions</h2>
-					<?php $recent = new WP_Query( 'cat=-23' ); ?>
+					<?php $recent = new WP_Query( 'posts_per_page=7' ); ?>
 					<?php if ( $recent->have_posts() ) : ?>
 					<ul>
 						<?php while( $recent->have_posts() ) : $recent->the_post(); ?>

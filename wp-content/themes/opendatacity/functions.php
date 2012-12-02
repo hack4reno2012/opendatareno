@@ -30,7 +30,7 @@ function odr_register_post_types() {
 		'has_archive' => true, 
 		'hierarchical' => false,
 		'menu_position' => null,
-		'supports' => array( 'title', 'editor', 'author', 'comments' )
+		'supports' => array( 'title', 'editor', 'author', 'comments', 'custom-fields' ),
 	); 
 	register_post_type( 'nomination', $args );
 }
