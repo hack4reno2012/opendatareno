@@ -1,4 +1,4 @@
-<?php
+post<?php
 /*
 Template Name: Submission Page
 */
